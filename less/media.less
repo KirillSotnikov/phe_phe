@@ -1,0 +1,94 @@
+// out: ../css/media.css
+
+
+@media screen and (max-width:1080px){
+    header.header{
+        padding: 15px 30px;
+    }
+    .header_list_item{
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width:960px){
+    .header_logo{
+        width: 65px;
+    }
+    .header_list_item{
+        font-size: 14px;
+    }
+    .header_info_tel{
+        font-size: 14px;
+        padding: 6px 10px;
+        margin-right: 10px;
+    }
+    .header_info_lang{
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:800px){
+    section.main .wrapper .main_comes{
+        font-size: 25px;
+    }
+    section.main .wrapper .main_title{
+        font-size: 67px;
+    }
+    section.main .wrapper .main_text{
+        font-size: 17px;
+    }
+    section.main .wrapper .main_buttons_item{
+        font-size: 16px;
+        padding: 10px;
+    }
+    header.header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .header_list{
+        display: none;
+    }
+    .header_info{
+        display: none;
+    }
+    .header_menu{
+        display: block;
+        height: 24px;
+    }
+    .header_call{
+        display: block;
+        height: 24px;
+    }
+}
+@media screen and (max-width:650px){
+    // section.main .wrapper .main_buttons{
+    //     flex-direction: column;
+    // }
+    section.main .wrapper .main_buttons_item{
+        margin: 10px 0;
+    }
+    section.main .wrapper .main_buttons_item{
+        font-size: 14px;
+        padding: 11px 20px;
+        width: 160px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:550px){
+    section.main .wrapper .main_comes{
+        font-size: 16px;
+    }
+    section.main .wrapper .main_title{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    section.main .wrapper .main_text{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:400px){
+    section.main .wrapper .main_buttons{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,210 @@
+* {
+  outline: none;
+}
+html,
+body {
+  font-family: "Avenir Next - Regular";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next - Regular";
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 9999999;
+  background: #fff;
+}
+.header_menu {
+  display: none;
+}
+.header_call {
+  display: none;
+}
+.header_logo {
+  width: 82px;
+}
+.header_list {
+  display: flex;
+  align-items: center;
+}
+.header_list_item {
+  color: #4a4440;
+  font-family: "Avenir Next - Regular";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 19px;
+}
+.header_info {
+  display: flex;
+}
+.header_info_tel {
+  font-family: "Avenir Next Cyr Medium";
+  font-size: 16px;
+  font-weight: 500;
+  /* Text style for "+48 796 53" */
+  letter-spacing: 1px;
+  border: 1px solid #decfb1;
+  padding: 9px 17px;
+  margin-right: 30px;
+}
+.header_info_lang {
+  color: #ffffff;
+  font-family: "Avenir Next - Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 9px;
+  border: 1px solid #decfb1;
+  background-color: #decfb1;
+}
+section.main {
+  min-height: 100vh;
+  position: relative;
+  background: url('../img/main_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+section.main .wrapper {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+section.main .wrapper .main_comes {
+  color: #ffffff;
+  font-family: "Avenir Next - Regular";
+  font-size: 30px;
+  font-weight: 400;
+  /* Text style for "Доброй пож" */
+  letter-spacing: 3.33px;
+  text-align: center;
+}
+section.main .wrapper .main_title {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+section.main .wrapper .main_text {
+  color: #ffffff;
+  font-family: "Avenir Next - Regular";
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 43px;
+}
+section.main .wrapper .main_buttons {
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+section.main .wrapper .main_buttons_item {
+  color: #ffffff;
+  font-family: "Avenir Next - Regular";
+  font-size: 18px;
+  font-weight: 500;
+  width: 250px;
+  padding: 14px;
+  border: 2px solid #ffffff;
+  display: block;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+section.main .wrapper .main_buttons_item:hover {
+  background-color: #decfb1;
+  color: #fff;
+  border-color: transparent;
+}
+.menu_container {
+  position: fixed;
+  z-index: 999;
+  top: 69px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-out;
+  padding: 15px;
+  box-sizing: border-box;
+  transform: translateY(-100%);
+}
+.menu_container.active {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.menu_container_box {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: space-around;
+}
+.menu_container_link {
+  color: #4a4440;
+  font-family: "Avenir Next Cyr Medium";
+  font-size: 24px;
+  font-weight: 500;
+}
+.menu_container_lang {
+  color: #ffffff;
+  font-family: "Avenir Next - Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 9px;
+  display: block;
+  text-align: center;
+  border: 1px solid #decfb1;
+  background-color: #decfb1;
+  width: 100%;
+  max-width: 400px;
+}
