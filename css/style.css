@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  position: relative;
 }
 h1,
 h2,
@@ -28,6 +29,9 @@ p {
   list-style: none;
   text-decoration: none;
 }
+a {
+  cursor: pointer;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,6 +45,33 @@ p {
   align-items: center;
   box-sizing: border-box;
   z-index: 9999999;
+  background: #fff;
+}
+.header .transparent_logo {
+  display: none;
+}
+.header.transparent_head {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.header.transparent_head .header_logo {
+  display: none;
+}
+.header.transparent_head .transparent_logo {
+  display: block;
+}
+.header.transparent_head .header_list_item {
+  color: #fff;
+}
+.header.transparent_head .header_info_tel {
+  color: #fff;
+  border-color: #fff;
+}
+.header.transparent_head .header_info_lang {
+  color: #262626;
   background: #fff;
 }
 .header_menu {
@@ -94,19 +125,31 @@ section.main {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 80px;
+  overflow: hidden;
 }
-section.main .wrapper {
+section.main.about_bg {
+  background: url('../img/about_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.main .main_container {
   min-height: 100vh;
   height: 100%;
   display: flex;
+  padding: 0 30px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
   box-sizing: border-box;
+  padding-left: 10%;
 }
-section.main .wrapper .main_comes {
+section.main .main_container.flex_start {
+  align-items: flex-start;
+}
+section.main .main_container .main_comes {
   color: #ffffff;
   font-family: "Avenir Next - Regular";
   font-size: 30px;
@@ -115,14 +158,14 @@ section.main .wrapper .main_comes {
   letter-spacing: 3.33px;
   text-align: center;
 }
-section.main .wrapper .main_title {
+section.main .main_container .main_title {
   color: #ffffff;
   font-size: 80px;
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
 }
-section.main .wrapper .main_text {
+section.main .main_container .main_text {
   color: #ffffff;
   font-family: "Avenir Next - Regular";
   font-size: 20px;
@@ -131,14 +174,14 @@ section.main .wrapper .main_text {
   text-align: center;
   margin-bottom: 43px;
 }
-section.main .wrapper .main_buttons {
+section.main .main_container .main_buttons {
   display: flex;
   max-width: 720px;
   width: 100%;
   justify-content: space-around;
   align-items: center;
 }
-section.main .wrapper .main_buttons_item {
+section.main .main_container .main_buttons_item {
   color: #ffffff;
   font-family: "Avenir Next - Regular";
   font-size: 18px;
@@ -150,7 +193,7 @@ section.main .wrapper .main_buttons_item {
   text-align: center;
   transition: all 0.2s ease-out;
 }
-section.main .wrapper .main_buttons_item:hover {
+section.main .main_container .main_buttons_item:hover {
   background-color: #decfb1;
   color: #fff;
   border-color: transparent;
@@ -207,4 +250,163 @@ section.main .wrapper .main_buttons_item:hover {
   background-color: #decfb1;
   width: 100%;
   max-width: 400px;
+}
+section.first {
+  padding: 100px 0;
+}
+section.first .first_container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+  justify-content: space-between;
+}
+section.first .first_container_images {
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+section.first .first_container_images_absolute {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+}
+section.first .first_container_text {
+  width: 30%;
+}
+section.first .first_container_text_title {
+  color: #4a4440;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Avenir Next Cyr Medium";
+}
+section.first .first_container_text_desc {
+  color: #4a4440;
+  font-family: "Avenir Next - Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 56px;
+}
+section.second {
+  padding: 100px 0;
+  padding-top: 0;
+}
+section.second .second_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.second .second_container_images {
+  width: 55%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+section.second .second_container_images_item {
+  width: 100%;
+}
+section.second .second_container_images_absolute {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+}
+section.second .second_container_text {
+  width: 38%;
+}
+section.second .second_container_text_title {
+  color: #4a4440;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Avenir Next Cyr Medium";
+}
+section.memories {
+  padding: 80px 0;
+}
+section.memories .wrapper .memories_title {
+  color: #4a4440;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 33px;
+}
+section.memories .wrapper .memories_slider {
+  position: relative;
+  z-index: 1;
+}
+section.memories .wrapper .memories_slider .slide .box {
+  width: 100%;
+  height: 600px;
+}
+section.memories .wrapper .memories_slider .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+section.memories .wrapper .memories_slider .arrow:hover {
+  opacity: 1;
+}
+section.memories .wrapper .memories_slider .arrow.left {
+  left: 30px;
+}
+section.memories .wrapper .memories_slider .arrow.right {
+  right: 30px;
+  transform: translateY(-50%) rotate(180deg);
+}
+footer.footer .wrapper .footer_logo {
+  width: 164px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+footer.footer .wrapper .footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+footer.footer .wrapper .footer_box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5px;
+}
+footer.footer .wrapper .footer_box_title {
+  color: #4a4440;
+  font-family: "Avenir Next Cyr Medium";
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+footer.footer .wrapper .footer_box_text {
+  color: #4a4440;
+  font-family: "Avenir Next - Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+footer.footer .wrapper .footer_copyright {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #4a444080;
+}
+footer.footer .wrapper .footer_copyright_text {
+  color: #4a4440;
+  font-family: "Avenir Next - Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
