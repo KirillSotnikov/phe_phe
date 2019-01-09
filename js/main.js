@@ -20,14 +20,20 @@ if( windowWidth <= 850 ){
 }
 
 var scroolHeader = function(){
-    var scroollEventer = $('html').scrollTop();
-    console.log(scroollEventer);
-    if(scroollEventer >= 100){
+    // var scroollEventer = $('html').scrollTop();
+    let scroollEventer = () => { 
+        const el = document.scrollingElement || document.documentElement; 
+        return el.scrollTop; 
+    }
+    // console.log(scroollEventer());
+    if(scroollEventer() >= 100){
         $('.header').removeClass('transparent_head');
-    } else if (scroollEventer <= 100 && windowWidth >= 850){
+    } else if (scroollEventer() <= 100 && windowWidth >= 850){
         $('.header').addClass('transparent_head');
     }
 }
 $(window).on('load', scroolHeader);
 $(window).scroll(scroolHeader);
+
+
 // $(window).on('mousewheel',scroolHeader); 
