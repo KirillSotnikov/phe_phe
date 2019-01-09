@@ -1,3 +1,9 @@
+@media screen and (max-width: 1250px) {
+  .header_list {
+    padding-left: 120px;
+    padding-right: 250px;
+  }
+}
 @media screen and (max-width: 1080px) {
   header.header {
     padding: 15px 30px;
@@ -7,6 +13,9 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .header_list {
+    top: 25px;
+  }
   .header_logo {
     width: 65px;
   }
@@ -46,7 +55,7 @@
     height: 500px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   section.main .wrapper .main_comes {
     font-size: 25px;
   }
