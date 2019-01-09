@@ -300,8 +300,6 @@ section.second .second_container {
 section.second .second_container_images {
   width: 55%;
   position: relative;
-  display: flex;
-  justify-content: flex-end;
 }
 section.second .second_container_images_item {
   width: 100%;

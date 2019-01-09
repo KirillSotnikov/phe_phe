@@ -4,7 +4,7 @@ $('.header_menu').click(function(){
 $('.memories_slider').slick({
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 5000,  
+    autoplaySpeed: 4000,  
     // arrows: false,  
     // asNavFor: '.big_slider .slider',
     prevArrow: '<div class="arrow left"><img src="img/arrow.png"></div>',

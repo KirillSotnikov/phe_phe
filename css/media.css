@@ -204,4 +204,7 @@
   section.main .wrapper .main_buttons {
     flex-direction: column;
   }
+  footer.footer .wrapper .footer_copyright_text {
+    font-size: 15px;
+  }
 }
