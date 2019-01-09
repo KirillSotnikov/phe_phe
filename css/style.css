@@ -142,7 +142,7 @@ body[data-aos-easing=ease] [data-aos] {
   background-color: #decfb1;
 }
 section.main {
-  min-height: 700px;
+  height: 70vh;
   position: relative;
   background: url('../img/main_bg.png');
   background-size: cover;
@@ -156,6 +156,12 @@ section.main.about_bg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+section.main.about_bg .main_container .main_title {
+  font-size: 60px;
+}
+section.main.about_bg .main_container .main_comes {
+  font-size: 24px;
 }
 section.main .main_container {
   min-height: 700px;
@@ -181,6 +187,7 @@ section.main .main_container .main_comes {
   /* Text style for "Доброй пож" */
   letter-spacing: 3.33px;
   text-align: center;
+  text-transform: uppercase;
 }
 section.main .main_container .main_title {
   color: #ffffff;

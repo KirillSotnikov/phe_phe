@@ -154,7 +154,8 @@ a{
     }
 }
 section.main {
-    min-height: 700px;
+    // min-height: 700px;
+    height: 70vh;
     position: relative;
     background: url('../img/main_bg.png');
     background-size: cover;
@@ -167,6 +168,14 @@ section.main {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        .main_container{
+            .main_title{
+                font-size: 60px;
+            }
+            .main_comes{
+                font-size: 24px;
+            }
+        }
     }
     .main_container{
         min-height: 700px;
@@ -193,6 +202,7 @@ section.main {
                 /* Text style for "Доброй пож" */
                 letter-spacing: 3.33px;
                 text-align: center;
+                text-transform: uppercase;
             }
             &_title{
                 color: #ffffff;
