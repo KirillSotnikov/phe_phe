@@ -13,8 +13,20 @@ $('.memories_slider').slick({
 });
 
 var windowWidth = $(document).width();
-console.log(windowWidth);
+// console.log(windowWidth);
 
 if( windowWidth <= 800 ){
     $('.header').removeClass('transparent_head');
 }
+
+
+
+$(window).on('mousewheel', function(){
+    var scroollEventer = $('html').scrollTop();
+    console.log(scroollEventer);
+    if(scroollEventer >= 100){
+        $('.header').removeClass('transparent_head');
+    } else if (scroollEventer >= 100 && windowWidth >= 800){
+        $('.header').addClass('transparent_head');
+    }
+}); 
