@@ -142,7 +142,7 @@ body[data-aos-easing=ease] [data-aos] {
   background-color: #decfb1;
 }
 section.main {
-  height: 70vh;
+  min-height: 70vh;
   position: relative;
   background: url('../img/main_bg.png');
   background-size: cover;
@@ -164,7 +164,7 @@ section.main.about_bg .main_container .main_comes {
   font-size: 24px;
 }
 section.main .main_container {
-  min-height: 700px;
+  min-height: 70vh;
   height: 100%;
   display: flex;
   padding: 0 30px;

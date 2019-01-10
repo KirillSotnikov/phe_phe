@@ -213,6 +213,17 @@
     section.first .first_container_images_absolute{
         bottom: -50%;
     }
+    section.main{
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    section.main .main_container{
+        min-height: 100vh;
+        height: 100%;
+        &.flex_start{
+            justify-content: center;
+        }
+    }
 }
 @media screen and (max-width:400px){
     section.main .wrapper .main_buttons{
