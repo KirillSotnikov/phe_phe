@@ -35,5 +35,8 @@ var scroolHeader = function(){
 $(window).on('load', scroolHeader);
 $(window).scroll(scroolHeader);
 
+$('.header_logo').click(function(){
+    document.open('index.html');
+})
 
 // $(window).on('mousewheel',scroolHeader); 

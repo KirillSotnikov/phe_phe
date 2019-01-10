@@ -97,6 +97,7 @@ body[data-aos-easing=ease] [data-aos] {
   width: 82px;
   position: relative;
   z-index: 88;
+  cursor: pointer;
 }
 .header_list {
   display: flex;
