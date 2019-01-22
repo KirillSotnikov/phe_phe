@@ -497,7 +497,7 @@ section.map .wrapper iframe {
   height: 400px;
 }
 .page-appartments {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   padding-top: 84px;
   box-sizing: border-box;
   display: flex;
