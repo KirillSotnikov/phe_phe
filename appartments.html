@@ -12,7 +12,7 @@
     <script src="https://client5545.idosell.com/widget/script/loadScriptsForOwnPage?1548163602"></script>
 </head>
 <body class="vh_window">
-<header class="header" data-aos="fade-down" data-aos-duration="800">
+<header class="header" >
         <img src="img/menu.png" alt="" class="header_menu">
         <a href="index.html" class="btn">
             <img src="img/header_logo.png" alt="" class="header_logo">
@@ -31,7 +31,7 @@
         <img src="img/call.png" alt="" class="header_call">
     </header>
     <div class="page-appartments">
-        <iframe src="https://client5545.idosell.com/widget/booking/defaultchoice/location/0/transparentbackground/1" style="width:980px;height:640px;border:none;"></iframe>
+        <iframe id="page-iframe" src="https://client5545.idosell.com/widget/booking/defaultchoice/location/0/transparentbackground/1" style="width:980px;height:640px;border:none;"></iframe>
     </div>
     <footer class="footer">
             <div class="wrapper">
@@ -42,6 +42,17 @@
             </div>
         </footer>
 
+<div id="cube-loader">
+    <div class="caption">
+        <div class="cube-loader">
+            <div class="cube loader-1"></div>
+            <div class="cube loader-2"></div>
+            <div class="cube loader-4"></div>
+            <div class="cube loader-3"></div>
+        </div>
+        <p class="preloader-text"> Please wait </p>
+    </div>
+</div>
 
 <div class="menu_container">
         <div class="menu_container_box">
@@ -54,9 +65,27 @@
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+
+    <script async>
+        $(document).ready(function() {
+            let preloader = $('#cube-loader');
+            let loader = preloader.find('.caption');
+
+            preloader.show();
+            loader.show();
+
+            $('#page-iframe').on("load", function () {
+                loader.fadeOut('slow');
+                preloader.fadeOut('slow');
+            });
+        });
+
+    </script>
+
+    <script async>
         AOS.init();
     </script>
-    <script src="js/main.js"></script>
+
+    <script defer src="js/main.js"></script>
 </body>
 </html>
