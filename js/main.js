@@ -7,8 +7,8 @@ $('.memories_slider').slick({
     autoplaySpeed: 4000,  
     // arrows: false,  
     // asNavFor: '.big_slider .slider',
-    prevArrow: '<div class="arrow left"><img src="/img/arrow.png"></div>',
-    nextArrow: '<div class="arrow right"><img src="/img/arrow.png"></div>',
+    prevArrow: '<div class="arrow left"><img src="/dmaparat-new/img/arrow.png"></div>',
+    nextArrow: '<div class="arrow right"><img src="/dmaparat-new/img/arrow.png"></div>',
 
 });
 
