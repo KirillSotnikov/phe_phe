@@ -309,7 +309,7 @@ section.first .first_container_text {
 }
 section.first .first_container_text_title {
   color: #4a4440;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
   font-family: "Avenir Next Cyr Medium";
 }
@@ -347,7 +347,7 @@ section.second .second_container_text {
 }
 section.second .second_container_text_title {
   color: #4a4440;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   font-family: "Avenir Next Cyr Medium";
 }
