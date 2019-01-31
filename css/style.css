@@ -131,6 +131,7 @@ body[data-aos-easing=ease] [data-aos] {
   border: 1px solid #decfb1;
   padding: 9px 17px;
   margin-right: 30px;
+  color: #decfb1;
 }
 .header_info_lang {
   color: #ffffff;
@@ -225,7 +226,7 @@ section.main .main_container .main_buttons_item {
   text-align: center;
   transition: all 0.2s ease-out;
 }
-section.main .main_container .main_buttons_item:hover {
+section.main .main_container .main_buttons_item.hover {
   background-color: #decfb1;
   color: #fff;
   border-color: transparent;

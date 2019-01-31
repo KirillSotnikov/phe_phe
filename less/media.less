@@ -95,6 +95,29 @@
     .header_menu{
         display: block;
         height: 24px;
+        width: 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.active{
+            .left{
+                transform: rotate(45deg);
+                transform-origin: left top;
+            }
+            .center{
+                opacity: 0;
+            }
+            .right{
+                transform: rotate(-45deg);
+                transform-origin: left bottom;
+            }
+        }
+        span{
+            width: 100%;
+            height: 3px;
+            background: #000; 
+            transition: all .4s ease-out;
+        }
     }
     .header_call{
         display: block;
@@ -158,6 +181,14 @@
     section.first .first_container{
         padding-bottom: 100px;
     }
+    section.main.about_bg{
+        height: 400px;
+        min-height: unset;
+    }
+    section.main .main_container{
+        min-height: unset;
+        height: 400px;
+    }
     section.first .first_container_images{
         align-items: center;
         width: 65%;
@@ -204,6 +235,7 @@
     }
     section.main .main_container .main_comes{
         font-size: 15px;
+        text-transform: unset;
     }
     section.main.about_bg .main_container .main_comes{
         font-size: 15px;
@@ -222,9 +254,16 @@
     section.map .wrapper{
         padding: 0;
     }
+    section.main .main_container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     section.main .main_container .main_buttons_item{
         font-size: 14px;
         width: 130px;
+    }
+    section.main .main_container .main_text{
+        font-size: 15px;
     }
 }
 @media screen and (max-width:550px){
@@ -251,8 +290,8 @@
         box-sizing: border-box;
     }
     section.main .main_container{
-        min-height: 100vh;
-        height: 100%;
+        // min-height: 100vh;
+        // height: 100%;
         &.flex_start{
             // justify-content: center;
         }
@@ -269,8 +308,8 @@
         font-size: 15px;
     }
     section.main .main_container .main_buttons{
-        flex-direction: column;
-        align-items: center;
+        // flex-direction: column;
+        // align-items: center;
     }
     section.main .main_container .main_buttons_item{
         margin-bottom: 20px;

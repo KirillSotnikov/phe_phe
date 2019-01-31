@@ -1,4 +1,5 @@
 $('.header_menu').click(function(){
+    $('.header_menu').toggleClass('active');
     $('.menu_container').toggleClass('active');
 });
 $('.memories_slider').slick({
