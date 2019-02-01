@@ -608,6 +608,44 @@ footer.footer .wrapper .footer_box_text a {
   position: relative;
   top: 50px;
 }
+.modal_container {
+  position: fixed;
+  bottom: -1000px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  background: #000;
+  border-radius: 3px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: none;
+}
+.modal_container.active {
+  bottom: 0;
+  display: flex;
+  z-index: 99999999999;
+}
+.modal_container_text {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Avenir Next - Regular";
+  width: 100%;
+}
+.modal_container_btn {
+  font-family: "Avenir Next - Regular";
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 200px;
+  align-self: flex-start;
+  margin-left: 10px;
+}
 @-webkit-keyframes cube-loader {
   0%,
   10% {
