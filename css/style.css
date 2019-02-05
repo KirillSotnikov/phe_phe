@@ -261,7 +261,7 @@ section.main .main_container .main_buttons_item.hover {
   padding: 10vh 0;
   align-items: center;
   text-align: center;
-  height: 100%;
+  flex-grow: 1;
   justify-content: space-around;
 }
 .menu_container_link {
