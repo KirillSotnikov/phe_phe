@@ -143,6 +143,9 @@ body[data-aos-easing=ease] [data-aos] {
   border: 1px solid #decfb1;
   background-color: #decfb1;
 }
+section.main .main_container .main_comes.left_align {
+  text-align: left;
+}
 section.main {
   min-height: 70vh;
   position: relative;
@@ -258,7 +261,7 @@ section.main .main_container .main_buttons_item.hover {
 .menu_container_box {
   display: flex;
   flex-direction: column;
-  padding: 10vh 0;
+  padding: 15vh 0;
   align-items: center;
   text-align: center;
   flex-grow: 1;
@@ -267,7 +270,7 @@ section.main .main_container .main_buttons_item.hover {
 .menu_container_link {
   color: #4a4440;
   font-family: "Avenir Next Cyr Medium";
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
 }
 .menu_container_lang {

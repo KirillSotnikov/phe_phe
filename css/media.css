@@ -179,6 +179,11 @@
     box-sizing: border-box;
   }
 }
+@media screen and (max-height: 600px) {
+  .menu_container_box {
+    padding: 7vh 0;
+  }
+}
 @media screen and (max-width: 600px) {
   section.first .first_container {
     padding-bottom: 100px;
